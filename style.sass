@@ -35,12 +35,15 @@ body
         width: 100%
         @media (max-width:1000px)
             overflow-x: overlay
+            height: fit-content
             scroll-snap-type: x mandatory
             &::-webkit-scrollbar
                 display: none
             aside
                 scroll-snap-align: center
                 min-width: 250px
+                .marquee
+                    min-height: 100svh
             .container
                 scroll-snap-align: center
                 min-width: 100%
