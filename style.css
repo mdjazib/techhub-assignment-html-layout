@@ -95,6 +95,9 @@ body main {
 @media (max-width: 1000px) {
   body main {
     overflow-x: overlay;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     -ms-scroll-snap-type: x mandatory;
         scroll-snap-type: x mandatory;
   }
@@ -104,6 +107,9 @@ body main {
   body main aside {
     scroll-snap-align: center;
     min-width: 250px;
+  }
+  body main aside .marquee {
+    min-height: 100svh;
   }
   body main .container {
     scroll-snap-align: center;
